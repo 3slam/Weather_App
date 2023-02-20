@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <string name="app_name" translatable="false">Open Weather</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="view_all_report" translatable="false"><u>View all report</u></string>
+
+
+    <!--  language -->
+    <string name="language" translatable="true">انت لغة امك ايه </string>
+
+    <!-- mode -->
+    <string name="mode" translatable="true">عاوز الالوان اي ي عرص </string>
+    <string name="mode_light" translatable="true">خليها بالنهار </string>
+    <string name="mode_dark" translatable="true">خليها بليل </string>
+
+    <!-- mode -->
+    <string name="units" translatable="true"> عاوز الوحدات اي ي خول </string>
+    <string name="kelvin" translatable="true">كيلفن</string>
+    <string name="celsius" translatable="true">سيلزيوس</string>
+    <string name="fahrenheit" translatable="true">فهرنهيت</string>
+
+    <string name="is_the_temperature_high">هل الحرارة مرتفعة </string>
+    <string name="just_made_an_alarm_for_u">أعمل منبه لك </string>
+    <string name="is_there_a_cloud">هل هناك سحاب </string>
+
+
+    <string name="start">أبدأ</string>
+    <string name="skip">تخطي</string>
+    <string name="back">الرجوع</string>
+    <string name="next">التالي</string>
+
+    <string name="language_en">الانجليزية</string>
+    <string name="language_ar">العربية</string>
+</resources>

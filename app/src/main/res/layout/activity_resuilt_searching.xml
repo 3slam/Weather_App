@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.HomeNavigationScreens.SearchScreens.ResuiltSearchingActivity">
+
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+  <TextView
+      android:id="@+id/city_txt"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/_17sdp"
+      android:gravity="center"
+      android:text="Naser City"
+      android:textSize="@dimen/_23ssp" />
+
+  <TextView
+      android:id="@+id/data_txt"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/_38sdp"
+       android:gravity="center"
+      android:text="3 March 2022"
+      android:textSize="@dimen/_14ssp" />
+
+  <ImageView
+      android:id="@+id/icon_image"
+      android:layout_width="126dp"
+      android:layout_height="95dp"
+      android:layout_gravity="center"
+      android:src="@drawable/favourite_icon" />
+
+  <TextView
+      android:id="@+id/description_txt"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:layout_margin="@dimen/_10sdp"
+      android:text="Sky Clear"
+      android:textSize="@dimen/_20ssp" />
+
+  <androidx.appcompat.widget.LinearLayoutCompat
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_margin="@dimen/_6sdp"
+        android:layout_weight="1"
+        app:cardCornerRadius="@dimen/_6sdp">
+
+      <androidx.appcompat.widget.LinearLayoutCompat
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:background="@color/Slate_Blue_light"
+          >
+
+        <TextView
+            style="@style/TEXT"
+            android:layout_margin="@dimen/_6sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Temperature"
+            android:textSize="@dimen/_14sdp"
+            android:background="@color/Slate_Blue_light" />
+
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/temperature"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_6sdp"
+            android:background="@color/Slate_Blue_light" />
+
+        <TextView
+            style="@style/TEXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="18 C"
+            android:layout_margin="@dimen/_6sdp"
+            android:background="@color/Slate_Blue_light"
+            android:textSize="@dimen/_14sdp" />
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_margin="@dimen/_6sdp"
+        android:layout_weight="1"
+        app:cardCornerRadius="@dimen/_6sdp">
+
+      <androidx.appcompat.widget.LinearLayoutCompat
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:background="@color/Slate_Blue_light"
+          >
+
+        <TextView
+            style="@style/TEXT"
+            android:layout_margin="@dimen/_6sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Humidity"
+            android:textSize="@dimen/_14sdp"
+            android:background="@color/Slate_Blue_light" />
+
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/humidity"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_6sdp"
+            android:background="@color/Slate_Blue_light" />
+
+        <TextView
+            style="@style/TEXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="18 C"
+            android:layout_margin="@dimen/_6sdp"
+            android:background="@color/Slate_Blue_light"
+            android:textSize="@dimen/_14sdp" />
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_margin="@dimen/_6sdp"
+        android:layout_weight="1"
+        app:cardCornerRadius="@dimen/_6sdp">
+
+      <androidx.appcompat.widget.LinearLayoutCompat
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:background="@color/Slate_Blue_light"
+          >
+
+        <TextView
+            style="@style/TEXT"
+            android:layout_margin="@dimen/_6sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Wind Speed"
+            android:textSize="@dimen/_14sdp"
+            android:background="@color/Slate_Blue_light" />
+
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/wind"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_6sdp"
+            android:background="@color/Slate_Blue_light" />
+
+        <TextView
+            style="@style/TEXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="18 C"
+            android:layout_margin="@dimen/_6sdp"
+            android:background="@color/Slate_Blue_light"
+            android:textSize="@dimen/_14sdp" />
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+
+  </androidx.appcompat.widget.LinearLayoutCompat>
+
+  <androidx.appcompat.widget.LinearLayoutCompat
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_margin="@dimen/_6sdp"
+        android:layout_weight="1"
+        app:cardCornerRadius="@dimen/_6sdp">
+
+      <androidx.appcompat.widget.LinearLayoutCompat
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:background="@color/Slate_Blue_light"
+          >
+
+        <TextView
+            style="@style/TEXT"
+            android:layout_margin="@dimen/_6sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Pressure"
+            android:textSize="@dimen/_14sdp"
+            android:background="@color/Slate_Blue_light" />
+
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/pressure_gauge"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_6sdp"
+            android:background="@color/Slate_Blue_light" />
+
+        <TextView
+            style="@style/TEXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="18 C"
+            android:layout_margin="@dimen/_6sdp"
+            android:background="@color/Slate_Blue_light"
+            android:textSize="@dimen/_14sdp" />
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_margin="@dimen/_6sdp"
+        android:layout_weight="1"
+        app:cardCornerRadius="@dimen/_6sdp">
+
+      <androidx.appcompat.widget.LinearLayoutCompat
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:background="@color/Slate_Blue_light"
+          >
+
+        <TextView
+            style="@style/TEXT"
+            android:layout_margin="@dimen/_6sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sunrise"
+            android:textSize="@dimen/_14sdp"
+            android:background="@color/Slate_Blue_light" />
+
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/sunrise"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_6sdp"
+            android:background="@color/Slate_Blue_light" />
+
+        <TextView
+            style="@style/TEXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="18 C"
+            android:layout_margin="@dimen/_6sdp"
+            android:background="@color/Slate_Blue_light"
+            android:textSize="@dimen/_14sdp" />
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_margin="@dimen/_6sdp"
+        android:layout_weight="1"
+        app:cardCornerRadius="@dimen/_6sdp">
+
+      <androidx.appcompat.widget.LinearLayoutCompat
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:background="@color/Slate_Blue_light"
+          >
+
+        <TextView
+            style="@style/TEXT"
+            android:layout_margin="@dimen/_6sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sunset"
+            android:textSize="@dimen/_14sdp"
+            android:background="@color/Slate_Blue_light" />
+
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/sunset"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_6sdp"
+            android:background="@color/Slate_Blue_light" />
+
+        <TextView
+            style="@style/TEXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="18 C"
+            android:layout_margin="@dimen/_6sdp"
+            android:background="@color/Slate_Blue_light"
+            android:textSize="@dimen/_14sdp" />
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+
+  </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/_10sdp"
+      >
+
+    <TextView
+        android:id="@+id/text_view_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Today"
+        android:textSize="@dimen/_16ssp" />
+
+    <TextView
+        android:id="@+id/text_view_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/view_all_report"
+        android:textSize="@dimen/_16ssp"/>
+
+  </RelativeLayout>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="horizontal"
+      app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+      tools:listitem="@layout/custm_item_hourly_weather"
+      />
+
+</LinearLayout>

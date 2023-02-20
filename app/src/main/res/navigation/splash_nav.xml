@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_nav"
+    app:startDestination="@id/loadingFragment">
+
+    <fragment
+        android:id="@+id/loadingFragment"
+        android:name="com.example.openweather.ui.onBoardingScreens.LoadingFragment"
+        android:label="fragment_loading"
+        tools:layout="@layout/fragment_loading" >
+        <action
+            android:id="@+id/action_loadingFragment_to_firstSplashScreenFragment"
+            app:destination="@id/firstSplashScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstSplashScreenFragment"
+        android:name="com.example.openweather.ui.onBoardingScreens.FirstSplashScreenFragment"
+        android:label="fragment_first_splash_screen"
+        tools:layout="@layout/fragment_first_splash_screen" >
+        <action
+            android:id="@+id/action_firstSplashScreenFragment_to_secondeSplashScreenFragment"
+            app:destination="@id/secondeSplashScreenFragment" />
+        <action
+            android:id="@+id/action_firstSplashScreenFragment_to_homeActivity2"
+            app:destination="@id/homeActivity2" />
+        <action
+            android:id="@+id/action_firstSplashScreenFragment_to_loadingFragment"
+            app:destination="@id/loadingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondeSplashScreenFragment"
+        android:name="com.example.openweather.ui.onBoardingScreens.SecondeSplashScreenFragment"
+        android:label="fragment_seconde_splash_screen"
+        tools:layout="@layout/fragment_seconde_splash_screen" >
+        <action
+            android:id="@+id/action_secondeSplashScreenFragment_to_thirdSplashScreenFragment"
+            app:destination="@id/thirdSplashScreenFragment" />
+        <action
+            android:id="@+id/action_secondeSplashScreenFragment_to_homeActivity2"
+            app:destination="@id/homeActivity2" />
+        <action
+            android:id="@+id/action_secondeSplashScreenFragment_to_firstSplashScreenFragment"
+            app:destination="@id/firstSplashScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdSplashScreenFragment"
+        android:name="com.example.openweather.ui.onBoardingScreens.ThirdSplashScreenFragment"
+        android:label="fragment_third_splash_screen"
+        tools:layout="@layout/fragment_third_splash_screen" >
+        <action
+            android:id="@+id/action_thirdSplashScreenFragment_to_homeActivity2"
+            app:destination="@id/homeActivity2" />
+        <action
+            android:id="@+id/action_thirdSplashScreenFragment_to_secondeSplashScreenFragment"
+            app:destination="@id/secondeSplashScreenFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/homeActivity2"
+        android:name="com.example.openweather.ui.HomeNavigationScreens.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
+</navigation>
