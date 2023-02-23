@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.HomeNavigationScreens.SearchScreens.ResuiltSearchingFragment">
+    tools:context=".ui.HomeNavigationScreens.SearchScreens.ResuiltSearchingActivity">
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -37,7 +37,7 @@
 
     <TextView
         android:id="@+id/city_txt"
-        style="@style/TEXT"
+        style="@style/CARD_VIEW"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_17sdp"
@@ -234,7 +234,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:text="@string/view_all_report"
+
 
         android:textSize="@dimen/_16ssp"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"

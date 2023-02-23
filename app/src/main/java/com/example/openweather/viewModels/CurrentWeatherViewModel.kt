@@ -12,8 +12,8 @@ class CurrentWeatherViewModel :ViewModel() {
     var weatherLiveData = MutableLiveData<CurrentWeatherResponse>()
     private val repo = WeatherRepository()
 
-    fun getCurrentWeather(lat :Double , lon:Double , apikey:String , unit:String) = viewModelScope.launch {
-       val response = repo.getCurrentWeather(lat, lon , apikey,unit)
+    fun getCurrentWeather(lat :Double , lon:Double , apikey:String , unit:String  ) = viewModelScope.launch {
+       val response = repo.getCurrentWeather(lat, lon , apikey,unit )
         if (response.isSuccessful){
             weatherLiveData.postValue(response.body())
         }else {

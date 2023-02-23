@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Setting"
+            android:text="@string/setting"
             android:textSize="@dimen/_20ssp">
 
         </TextView>
@@ -47,14 +47,14 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/Slate_Blue_light">
+                style="@style/CARD_VIEW">
 
                 <ImageView
                     android:id="@+id/imageVie"
                     android:layout_width="@dimen/_27sdp"
                     android:layout_height="@dimen/_27sdp"
                     android:layout_margin="@dimen/_9sdp"
-                    android:background="@color/Slate_Blue_light"
+                    style="@style/CARD_VIEW"
                     android:src="@drawable/language"
                     app:layout_constraintBottom_toBottomOf="parent"
 
@@ -64,11 +64,11 @@
 
                 <TextView
                     android:id="@+id/langTxt"
-                    style="@style/TEXT"
+
                     android:layout_width="218dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:background="@color/Slate_Blue_light"
+                    style="@style/CARD_VIEW"
                     android:text="@string/language"
                     android:textSize="@dimen/_14ssp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -92,14 +92,14 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/Slate_Blue_light">
+                style="@style/CARD_VIEW">
 
                 <ImageView
                     android:id="@+id/nn"
                     android:layout_width="@dimen/_27sdp"
                     android:layout_height="@dimen/_27sdp"
                     android:layout_margin="@dimen/_9sdp"
-                    android:background="@color/Slate_Blue_light"
+                    style="@style/CARD_VIEW"
                     android:src="@drawable/mode_icon"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHorizontal_bias="0.003"
@@ -108,11 +108,11 @@
 
                 <TextView
                     android:id="@+id/modeTxt"
-                    style="@style/TEXT"
+                    style="@style/CARD_VIEW"
                     android:layout_width="218dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:background="@color/Slate_Blue_light"
+
                     android:text="@string/mode"
                     android:textSize="@dimen/_14ssp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -136,14 +136,14 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/Slate_Blue_light">
+                style="@style/CARD_VIEW">
 
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="@dimen/_27sdp"
                     android:layout_height="@dimen/_27sdp"
                     android:layout_margin="@dimen/_9sdp"
-                    android:background="@color/Slate_Blue_light"
+                    style="@style/CARD_VIEW"
                     android:src="@drawable/celsius"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHorizontal_bias="0.003"
@@ -152,11 +152,11 @@
 
                 <TextView
                     android:id="@+id/unitsTxt"
-                    style="@style/TEXT"
+
                     android:layout_width="218dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:background="@color/Slate_Blue_light"
+                    style="@style/CARD_VIEW"
                     android:text="@string/units"
                     android:textSize="@dimen/_14ssp"
                     app:layout_constraintBottom_toBottomOf="parent"

@@ -2,27 +2,26 @@ package com.example.openweather.adapters
 
 import android.content.ClipData
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.Toast
+import androidx.core.content.ContentProviderCompat.requireContext
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.openweather.data.models.CitySearch
 import com.example.openweather.databinding.CustmItemSearchBinding
+import com.example.openweather.ui.HomeNavigationScreens.SearchScreens.ResuiltSearchingActivity
+import com.example.openweather.utils.Constants
 
-class CitySearchAdapter (context: Context ): RecyclerView.Adapter<CitySearchAdapter.CitySearchViewHolder>() {
+class CitySearchAdapter (context: Context , private val clickListener: OnItemClickListener  ): RecyclerView.Adapter<CitySearchAdapter.CitySearchViewHolder>() {
+
     val context= context
 
-    interface OnItemClickListener {
-        fun onItemClick(position: Int)
-    }
-    private lateinit var clickListener: OnItemClickListener
-
-    fun setOnItemClickListener(listener: OnItemClickListener) {
-        clickListener = listener
-    }
+    private var listener   = clickListener
 
     inner class CitySearchViewHolder (val binding : CustmItemSearchBinding) : RecyclerView.ViewHolder(binding.root)
 
@@ -48,11 +47,17 @@ class CitySearchAdapter (context: Context ): RecyclerView.Adapter<CitySearchAdap
 
     override fun onBindViewHolder(holder: CitySearchViewHolder, position: Int) {
         val item = differ.currentList[position]
-          holder.binding.citySearchTxt.text= item.city
-
-     }
-
+        holder.binding.citySearchTxt.text = item.city
+        holder.itemView.setOnClickListener {
+            listener?.onItemClick(item)
+        }
+    }
     override fun getItemCount(): Int {
         return differ.currentList.size
     }
+
+    interface OnItemClickListener {
+        fun onItemClick(item: CitySearch)
+    }
+
 }

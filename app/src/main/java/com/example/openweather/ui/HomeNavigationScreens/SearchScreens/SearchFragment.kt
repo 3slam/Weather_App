@@ -31,7 +31,16 @@ class SearchFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         _binding = FragmentSearchBinding.inflate(inflater, container, false)
         var cityList :List<CitySearch> = ArrayList()
-        val citySearchAdapter = CitySearchAdapter(requireContext())
+
+        val listener = object : CitySearchAdapter.OnItemClickListener {
+            override fun onItemClick(item: CitySearch) {
+                val intent = Intent(requireContext(), ResuiltSearchingActivity::class.java)
+                intent.putExtra(Constants.SERACH_CITY, item.city )
+                startActivity(intent)
+            }
+        }
+
+        val citySearchAdapter = CitySearchAdapter(requireContext(),listener)
         val searchProviderFactory = SearchProviderFactory(requireContext())
         searchViewModel = ViewModelProvider(this,searchProviderFactory).get(SearchViewModel::class.java)
 

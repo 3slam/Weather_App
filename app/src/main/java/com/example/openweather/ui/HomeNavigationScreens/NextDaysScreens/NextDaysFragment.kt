@@ -39,14 +39,16 @@ class NextDaysFragment : Fragment() {
 
 
         hourlyWeatherViewModel = ViewModelProvider(this)[HourlyWeatherViewModel::class.java]
-        hourlyWeatherViewModel.getCurrentWeatherHourly( lat!! , lon!!, Constants.API_KEY , unit!!)
+        hourlyWeatherViewModel.getCurrentWeatherHourly( lat!! , lon!!, Constants.API_KEY , unit!! )
 
         hourlyWeatherViewModel.weatherLiveData.observe(viewLifecycleOwner){
+
             val daysWeatherAdapter = DaysWeatherAdapter(requireContext())
             binding.daysRv.apply {
                 adapter = daysWeatherAdapter
             }
             daysWeatherAdapter.differ.submitList(it.list)
+
         }
 
         return binding.root

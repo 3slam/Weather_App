@@ -3,36 +3,36 @@
 
 
 
-    <string name="app_name" translatable="false">Open Weather</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
-    <string name="view_all_report" translatable="false"><u>View all report</u></string>
-
-
-    <!--  language -->
-    <string name="language" translatable="true">انت لغة امك ايه </string>
-
-    <!-- mode -->
-    <string name="mode" translatable="true">عاوز الالوان اي ي عرص </string>
-    <string name="mode_light" translatable="true">خليها بالنهار </string>
-    <string name="mode_dark" translatable="true">خليها بليل </string>
-
-    <!-- mode -->
-    <string name="units" translatable="true"> عاوز الوحدات اي ي خول </string>
-    <string name="kelvin" translatable="true">كيلفن</string>
-    <string name="celsius" translatable="true">سيلزيوس</string>
-    <string name="fahrenheit" translatable="true">فهرنهيت</string>
-
-    <string name="is_the_temperature_high">هل الحرارة مرتفعة </string>
-    <string name="just_made_an_alarm_for_u">أعمل منبه لك </string>
-    <string name="is_there_a_cloud">هل هناك سحاب </string>
-
-
-    <string name="start">أبدأ</string>
-    <string name="skip">تخطي</string>
-    <string name="back">الرجوع</string>
-    <string name="next">التالي</string>
-
-    <string name="language_en">الانجليزية</string>
-    <string name="language_ar">العربية</string>
+    <string name = "start"> أبدا </string>
+    <string name = "next"> التالي </string>
+    <string name = "is_the_temperature_high"> هل درجة مرتفعة مرتفعة؟ </string>
+    <string name = "skip"> تخ </string>
+    <string name = "back"> للخلف </string>
+    <string name = "is_there_a_cloud"> هل توجد سحابة </string>
+    <string name = "just_made_an_alarm_for_u"> أصدر تنبيهًا لـك </string>
+    <string name = "temperature"> درجة الحرارة </string>
+    <string name = "humidity"> الرطوبة </string>
+    <string name = "wind_speed"> سرعة الرياح </string>
+    <string name = "pressure"> الضغط </string>
+    <string name = "sunrise"> الشروق </string>
+    <string name = "sunset"> غروب الشمس </string>
+    <string name = "today"> اليوم </string>
+    <string name = "weather_for_next_days"> الطقس للأيام القادمة </string>
+    <string name = "enter_city"> أدخل المدينة </string>
+    <string name = "search"> بحث </string>
+    <string name = "clear_all"> مسح الكل </string>
+    <string name = "recent_searches"> عمليات البحث الأخيرة </string>
+    <string name = "setting"> الإعدادات </string>
+    <string name = "language"> اللغة </string>
+    <string name = "mode"> الوضع </string>
+    <string name = "units"> الوحدات </string>
+    <string name = "english"> الإنجليزية </string>
+    <string name = "arabic"> العربية </string>
+    <string name = "dark_mode"> الوضع الداكن </string>
+    <string name = "light_mode"> وضع الإضاءة </string>
+    <string name = "kelvin"> كلفن </string>
+    <string name = "celsius"> سيلزيوس </string>
+    <string name = "fahrenheit"> فهرنهايت </string>
+    <string name="home">ألرئيسية</string>
+    <string name="next_days">الايام القادمة</string>
 </resources>

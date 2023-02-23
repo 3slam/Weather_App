@@ -1,34 +1,38 @@
 <resources>
 
-    <string name="app_name">Open Weather</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="view_all_report"><u>View all report</u></string>
-
-
-    <!--  language -->
+    <string name="app_name" translatable="false">Open Weather</string>
+    <string name="start">Start</string>
+    <string name="next">Next</string>
+    <string name="is_the_temperature_high">Is the temperature high</string>
+    <string name="skip">Skip</string>
+    <string name="back">Back</string>
+    <string name="is_there_a_cloud">Is there a cloud</string>
+    <string name="just_made_an_alarm_for_u">just made an alarm for u</string>
+    <string name="temperature">Temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="pressure">Pressure</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="today">Today</string>
+    <string name="weather_for_next_days">Weather For Next Days</string>
+    <string name="enter_city">Enter City</string>
+    <string name="search">Search</string>
+    <string name="clear_all">Clear All</string>
+    <string name="recent_searches">Recent Searches</string>
+    <string name="setting">Setting</string>
     <string name="language">Language</string>
-    <string name="language_en">English</string>
-    <!-- Arabic language -->
-    <string name="language_ar">Arabic</string>
-
-    <!-- mode -->
     <string name="mode">Mode</string>
-    <string name="mode_light">Light</string>
-    <string name="mode_dark">Dark</string>
-
-    <!-- mode -->
     <string name="units">Units</string>
+    <string name="english">English</string>
+    <string name="arabic">Arabic</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="light_mode">Light Mode</string>
     <string name="kelvin">Kelvin</string>
     <string name="celsius">Celsius</string>
     <string name="fahrenheit">Fahrenheit</string>
-    <string name="open_weather" translatable="false">Open Weather</string>
-    <string name="is_the_temperature_high">is the temperature high</string>
-    <string name="just_made_an_alarm_for_u">just made an alarm for u</string>
-    <string name="is_there_a_cloud">is there a cloud</string>
-    <string name="start">Start</string>
-    <string name="skip">Skip</string>
-    <string name="back">Back</string>
-    <string name="next">Next</string>
+
+    <string name="home">Home</string>
+    <string name="next_days">Next Days</string>
 
 </resources>

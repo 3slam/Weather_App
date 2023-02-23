@@ -13,6 +13,7 @@ interface IWeatherApi {
        @Query("lat") lat:Double ,
        @Query("lon") lon:Double ,
        @Query("appid") appid:String ,
+
         @Query("units") unit:String ,
     ) : Response<CurrentWeatherResponse>
 
@@ -20,6 +21,7 @@ interface IWeatherApi {
     suspend fun getCurrentWeatherByCity(
         @Query("q") q:String ,
         @Query("appid") appid:String ,
+
         @Query("units") unit:String
     ) : Response<CurrentWeatherResponse>
 
@@ -29,6 +31,7 @@ interface IWeatherApi {
         @Query("lat") lat:Double ,
         @Query("lon") lon:Double ,
         @Query("appid") appid:String ,
+
         @Query("units") unit:String ,
     ) : Response<Day3HourResponse>
 

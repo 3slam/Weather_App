@@ -8,27 +8,34 @@ import androidx.lifecycle.viewModelScope
 import com.example.openweather.data.local.WeatherDataBase
 import com.example.openweather.data.models.CitySearch
 import com.example.openweather.data.models.CurrentWeatherResponse
+import com.example.openweather.data.models.Day3HourResponse
 import com.example.openweather.repo.SearchCityRepository
 import com.example.openweather.repo.WeatherRepository
+import com.example.openweather.utils.Constants
 import kotlinx.coroutines.launch
 
 class SearchViewModel(context: Context): ViewModel() {
 
     val dataBase = WeatherDataBase.getInstance(context)
-    private val repo = SearchCityRepository(dataBase)
-    fun getAllSearches() = repo.getAllSearches()
+    var weatherLiveData = MutableLiveData<CurrentWeatherResponse>()
+
+    private val searchCityRepository = SearchCityRepository(dataBase)
+    private  val weatherRepository=WeatherRepository()
+
+    fun getAllSearches() = searchCityRepository.getAllSearches()
+
 
 
     suspend fun insertCitySearchItem(citySearch: CitySearch)   {
-        repo.insertCitySearchItem(citySearch)
+        searchCityRepository.insertCitySearchItem(citySearch)
     }
 
     suspend fun deletCitySearchItem(citySearch: CitySearch)  {
-        repo.deletCitySearchItem(citySearch)
+        searchCityRepository.deletCitySearchItem(citySearch)
     }
 
     suspend fun deletAllSearches()  {
-        repo.deletAllSearches()
+        searchCityRepository.deletAllSearches()
     }
 
 }

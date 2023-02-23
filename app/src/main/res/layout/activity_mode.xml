@@ -31,7 +31,7 @@
         style="@style/TEXT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mode"
+        android:text="@string/mode"
         android:textSize="@dimen/_20ssp"
 
         app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
@@ -58,7 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_9sdp"
-            android:text="@string/mode_dark"
+            android:text="@string/dark_mode"
             android:textSize="@dimen/_14ssp" />
 
         <RadioButton
@@ -67,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_9sdp"
-            android:text="@string/mode_light"
+            android:text="@string/light_mode"
             android:textSize="@dimen/_14ssp" />
 
 

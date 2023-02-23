@@ -30,7 +30,7 @@
         style="@style/TEXT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Language"
+        android:text="@string/language"
         android:textSize="@dimen/_20ssp"
 
         app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
@@ -55,7 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_9sdp"
-            android:text="English"
+            android:text="@string/english"
             android:textSize="@dimen/_14ssp" />
 
         <RadioButton
@@ -64,7 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_9sdp"
-            android:text="Arabic"
+            android:text="@string/arabic"
             android:textSize="@dimen/_14ssp" />
     </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>

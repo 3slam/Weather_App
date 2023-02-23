@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="Home"
+    <item android:title="@string/home"
         android:id="@+id/homeFragment"
         android:icon="@drawable/home_icon"
 
@@ -9,12 +9,12 @@
         />
 
 
-    <item android:title="Next Days"
+    <item android:title="@string/next_days"
         android:id="@+id/favouriterFragment"
         android:icon="@drawable/calendar_image"/>
 
 
-    <item android:title="Search"
+    <item android:title="@string/search"
         android:id="@+id/searchFragment"
         android:icon="@drawable/searching_icon"
         />
@@ -22,7 +22,7 @@
 
 
 
-    <item android:title="Settings"
+    <item android:title="@string/setting"
         android:id="@+id/settingsFragment"
         android:icon="@drawable/settings"/>
 

@@ -20,7 +20,7 @@
         <entry key="..\:/AndroidProject/OpenWeather4/app/src/main/res/layout/custm_item_search.xml" value="0.264" />
         <entry key="..\:/AndroidProject/OpenWeather4/app/src/main/res/layout/fragment_favouriter.xml" value="0.21981981981981982" />
         <entry key="..\:/AndroidProject/OpenWeather4/app/src/main/res/layout/fragment_first_splash_screen.xml" value="0.264" />
-        <entry key="..\:/AndroidProject/OpenWeather4/app/src/main/res/layout/fragment_home.xml" value="0.264" />
+        <entry key="..\:/AndroidProject/OpenWeather4/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/AndroidProject/OpenWeather4/app/src/main/res/layout/fragment_loading.xml" value="0.23007246376811594" />
         <entry key="..\:/AndroidProject/OpenWeather4/app/src/main/res/layout/fragment_resuilt_searching.xml" value="0.2477355072463768" />
         <entry key="..\:/AndroidProject/OpenWeather4/app/src/main/res/layout/fragment_search.xml" value="0.264" />
@@ -28,6 +28,8 @@
         <entry key="..\:/AndroidProject/OpenWeather4/app/src/main/res/layout/fragment_settings.xml" value="0.264" />
         <entry key="..\:/AndroidProject/OpenWeather4/app/src/main/res/layout/fragment_third_splash_screen.xml" value="0.21739130434782608" />
         <entry key="..\:/AndroidProject/OpenWeather4/app/src/main/res/layout/rv_today_weather.xml" value="0.264" />
+        <entry key="..\:/AndroidProject/OpenWeather4/app/src/main/res/layout/shimmer_layout_home.xml" value="0.24094202898550723" />
+        <entry key="..\:/AndroidProject/OpenWeather4/app/src/main/res/layout/shimmer_layout_hourly_item.xml" value="0.24094202898550723" />
         <entry key="..\:/AndroidProject/OpenWeather4/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.1" />
       </map>
     </option>

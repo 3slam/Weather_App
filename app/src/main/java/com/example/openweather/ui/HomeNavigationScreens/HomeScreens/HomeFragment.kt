@@ -1,7 +1,6 @@
 package com.example.openweather.ui.HomeNavigationScreens.HomeScreens
 
 import android.content.Context
-import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Build
 import android.os.Bundle
@@ -10,24 +9,16 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
-import com.example.openweather.adapters.DaysWeatherAdapter
 import com.example.openweather.adapters.HourlyWeatherAdapter
 import com.example.openweather.data.models.CurrentWeatherResponse
 import com.example.openweather.databinding.FragmentHomeBinding
 import com.example.openweather.utils.Constants
 import com.example.openweather.viewModels.CurrentWeatherViewModel
 import com.example.openweather.viewModels.HourlyWeatherViewModel
-
 import java.text.SimpleDateFormat
-import java.time.Instant
-import java.time.ZoneId
-import java.time.ZonedDateTime
-import java.time.format.DateTimeFormatter
 import java.util.*
-
 
 class HomeFragment : Fragment() {
 
@@ -36,24 +27,37 @@ class HomeFragment : Fragment() {
     private lateinit var currentWeatherViewModel : CurrentWeatherViewModel
     private lateinit var hourlyWeatherViewModel: HourlyWeatherViewModel
 
+
+
+
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
+        val shimmerViewContainer = binding.shimmerHome
+        shimmerViewContainer.startShimmer()
+
         val sharedPreferences: SharedPreferences = context?.getSharedPreferences(Constants.SH_PER_FILE_NAME, Context.MODE_PRIVATE)!!
         val lat = sharedPreferences.getString(Constants.LATATUIDE, "0.0" )?.toDouble()
         val lon = sharedPreferences.getString(Constants.LONGATUITE,"0.0")?.toDouble()
+
         val unit = sharedPreferences.getString(Constants.TEMP_DEGREE_UNIT,"metric")
 
 
         currentWeatherViewModel = ViewModelProvider(this)[CurrentWeatherViewModel::class.java]
-        currentWeatherViewModel.getCurrentWeather( lat!! , lon!!, Constants.API_KEY , unit!!)
-        currentWeatherViewModel.weatherLiveData.observe(viewLifecycleOwner) {handlingCurrentWeatherResponse(it , unit)}
+        currentWeatherViewModel.getCurrentWeather( lat!! , lon!!, Constants.API_KEY , unit!! )
+
+        currentWeatherViewModel.weatherLiveData.observe(viewLifecycleOwner) {handlingCurrentWeatherResponse(it , unit  )}
 
         hourlyWeatherViewModel = ViewModelProvider(this)[HourlyWeatherViewModel::class.java]
-        hourlyWeatherViewModel.getCurrentWeatherHourly( lat!! , lon!!, Constants.API_KEY , unit!!)
+        hourlyWeatherViewModel.getCurrentWeatherHourly( lat!! , lon!!, Constants.API_KEY , unit!! )
         hourlyWeatherViewModel.weatherLiveData.observe(viewLifecycleOwner){
-            val hourlyWeatherAdapter = HourlyWeatherAdapter(unit)
+
+            shimmerViewContainer.stopShimmer()
+            binding.shimmerHome.visibility = View.GONE
+            binding.homeFragmentUi.visibility=View.VISIBLE
+
+            val hourlyWeatherAdapter = HourlyWeatherAdapter(unit = unit)
             binding.todayRv.apply {
                 adapter = hourlyWeatherAdapter
             }
@@ -69,19 +73,26 @@ class HomeFragment : Fragment() {
         _binding = null
     }
 
-    private fun handlingCurrentWeatherResponse( currentWeatherResponse: CurrentWeatherResponse , unit:String){
+    private fun handlingCurrentWeatherResponse(
+        currentWeatherResponse: CurrentWeatherResponse,
+        unit: String,
 
-        var tempUnit :String = when (unit) {
-            "stander" -> " K"
-            "metric" -> " °C"
-            else -> " F"
-        }
+    ){
+        var tempUnit  =""
+        var windSpeedUnit =""
 
-        var windSpeedUnit :String = when (unit) {
-            "stander" -> " m/s"
-            "metric" -> " m/s"
-            else -> " miles/h"
-        }
+
+            tempUnit  = when(unit){
+                "stander" -> " K"
+                "metric" -> " °C"
+                else -> " F"
+            }
+
+            windSpeedUnit = when(unit) {
+                "stander" -> " m/s"
+                "metric" -> " m/s"
+                else -> "miles/h"
+            }
 
         val cityTxtFormat = SimpleDateFormat("dd MMM yyyy")
         val cityTxtData =  Date(currentWeatherResponse.sys.sunset * 1000)

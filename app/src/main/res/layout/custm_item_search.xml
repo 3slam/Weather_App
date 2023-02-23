@@ -18,13 +18,13 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/Slate_Blue_light">
+        style="@style/CARD_VIEW">
 
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="@dimen/_16sdp"
                 android:layout_height="@dimen/_16sdp"
-                android:background="@color/Slate_Blue_light"
+                style="@style/CARD_VIEW"
                 android:layout_margin="@dimen/_9sdp"
                 android:src="@drawable/history"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -35,11 +35,11 @@
 
             <TextView
                 android:id="@+id/city_search_txt"
-                style="@style/TEXT"
+                style="@style/CARD_VIEW"
                 android:layout_marginStart="@dimen/_9sdp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/Slate_Blue_light"
+
                 android:text="London"
                 android:textSize="@dimen/_12ssp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -51,11 +51,13 @@
                 android:layout_width="@dimen/_16sdp"
                 android:layout_height="@dimen/_16sdp"
                 android:layout_margin="@dimen/_9sdp"
-                android:background="@color/Slate_Blue_light"
-                android:src="@drawable/delete"
+                style="@style/CARD_VIEW"
+
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"></ImageView>
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>

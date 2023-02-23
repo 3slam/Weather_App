@@ -23,7 +23,6 @@ abstract class WeatherDataBase : RoomDatabase() {
                 }
             }
         }
-
         private fun createDatabase(context: Context) = Room.databaseBuilder(
             context.applicationContext,
             WeatherDataBase::class.java,

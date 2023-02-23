@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,20 +13,19 @@
         style="@style/BUTTON"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/weather_for_next_days"
         android:textColor="@color/YEllow"
-        android:text="Weather For Next Days "
         android:textSize="@dimen/_20ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
 
-
     <ImageView
-        android:layout_marginTop="@dimen/_30sdp"
         android:id="@+id/imageView6"
         android:layout_width="182dp"
         android:layout_height="114dp"
+        android:layout_marginTop="@dimen/_30sdp"
         android:src="@drawable/next_week"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,10 +37,10 @@
         android:layout_height="534dp"
         android:layout_marginTop="1dp"
         android:orientation="vertical"
-        tools:listitem="@layout/custm_item_days_weather"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        tools:listitem="@layout/custm_item_days_weather" />
 </androidx.constraintlayout.widget.ConstraintLayout>

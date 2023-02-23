@@ -2,15 +2,15 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/CARD_VIEW"
+
     android:layout_width="wrap_content"
     app:cardCornerRadius="9dp"
     android:layout_margin="10dp"
-    android:backgroundTint="@color/Slate_Blue_light"
+     style="@style/CARD_VIEW"
     android:layout_height="wrap_content">
+
      <androidx.constraintlayout.widget.ConstraintLayout
          android:layout_width="match_parent"
-
          style="@style/CARD_VIEW"
          android:layout_margin="10dp"
          android:layout_height="match_parent">
@@ -18,7 +18,7 @@
           <ImageView
               android:id="@+id/weather_image"
               android:layout_width="@dimen/_50sdp"
-              android:backgroundTint="@color/Slate_Blue_light"
+              style="@style/CARD_VIEW"
               android:layout_height="@dimen/_50sdp"
               app:layout_constraintStart_toStartOf="parent"
               android:scaleType="centerCrop"
@@ -28,8 +28,8 @@
 
           <TextView
               android:id="@+id/data_txt"
-              style="@style/TEXT"
-              android:background="@color/Slate_Blue_light"
+              style="@style/CARD_VIEW"
+
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:layout_marginStart="20dp"
@@ -41,9 +41,9 @@
 
           <TextView
               android:id="@+id/temp_txt"
-              style="@style/TEXT"
+              style="@style/CARD_VIEW"
               android:layout_margin="@dimen/_22sdp"
-              android:background="@color/Slate_Blue_light"
+
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:layout_marginStart="14dp"
@@ -55,4 +55,5 @@
 
 
      </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.cardview.widget.CardView>

@@ -12,5 +12,7 @@ class Constants {
         const val MODE  = "mode"
         const val LANGUAGE  = "language"
         const val SERACH_CITY  = "sar"
+        const val openOnce = "openOnce"
+
     }
 }

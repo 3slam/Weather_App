@@ -18,14 +18,18 @@
     </style>
 
 
+     <style name="SHIMMER_COLOR">
+         <item name="android:backgroundTint">@color/Off_White</item>
+     </style>
 
-    <style name="TEXT" >
-        <item name="android:textColor">@color/Blue</item>
+    <style name="TEXT_IN_CARD_VIEW" >
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/Off_White</item>
         <item name="android:fontFamily">sans-serif</item>
     </style>
 
     <style name="CARD_VIEW" >
-        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:backgroundTint">@color/Off_White</item>
         <item name="cardCornerRadius">@dimen/_16sdp</item>
 
     </style>

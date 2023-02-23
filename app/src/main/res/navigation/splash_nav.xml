@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_loadingFragment_to_firstSplashScreenFragment"
             app:destination="@id/firstSplashScreenFragment" />
+        <action
+            android:id="@+id/action_loadingFragment_to_homeActivity2"
+            app:destination="@id/homeActivity2" />
     </fragment>
     <fragment
         android:id="@+id/firstSplashScreenFragment"

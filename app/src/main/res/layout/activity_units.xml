@@ -18,14 +18,16 @@
         app:srcCompat="@drawable/celsius" />
 
     <Toolbar
+
         android:id="@+id/toolbar2"
         android:layout_width="match_parent"
-
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"></Toolbar>
+        app:layout_constraintTop_toBottomOf="@+id/imageView4">
+
+    </Toolbar>
 
 
     <TextView
@@ -34,15 +36,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_10sdp"
-        android:text="Units"
+        android:text="@string/units"
         android:textSize="@dimen/_20ssp"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintStart_toStartOf="@+id/toolbar2"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
         app:layout_constraintVertical_bias="0.761" />
-
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -53,7 +53,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2"
         app:layout_constraintVertical_bias="0.013">
-
         <RadioButton
             android:id="@+id/radio_button_Kelvin"
             android:layout_width="wrap_content"
@@ -61,7 +60,7 @@
             android:layout_margin="@dimen/_9sdp"
             style="@style/TEXT"
             android:textSize="@dimen/_14ssp"
-            android:text="Kelvin" />
+            android:text="@string/kelvin" />
         <RadioButton
             android:id="@+id/radio_button_Celsius"
             android:layout_width="wrap_content"
@@ -69,8 +68,7 @@
             android:layout_margin="@dimen/_9sdp"
             style="@style/TEXT"
             android:textSize="@dimen/_14ssp"
-            android:text="Celsius " />
-
+            android:text="@string/celsius" />
         <RadioButton
             android:id="@+id/radio_button_Fahrenheit"
             android:layout_width="wrap_content"
@@ -78,6 +76,6 @@
             android:layout_margin="@dimen/_9sdp"
             style="@style/TEXT"
             android:textSize="@dimen/_14ssp"
-            android:text="Fahrenheit" />
+            android:text="@string/fahrenheit" />
     </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,8 +12,8 @@ class DaysWeatherViewModel :ViewModel() {
     var weatherLiveData = MutableLiveData<Day3HourResponse>()
     private val repo = WeatherRepository()
 
-    fun getCurrentWeatherDaysAndHourly(lat :Double , lon:Double , apikey:String , unit:String) = viewModelScope.launch {
-        val response = repo.getCurrentWeatherDaysAndHourly(lat, lon , apikey,unit)
+    fun getCurrentWeatherDaysAndHourly(lat :Double , lon:Double , apikey:String , unit:String  ) = viewModelScope.launch {
+        val response = repo.getCurrentWeatherDaysAndHourly(lat, lon , apikey,unit )
         weatherLiveData.postValue(response.body())
     }
 
