@@ -64,7 +64,7 @@
 
 - [FusedLocation Provider Client](https://developers.google.com/android/reference/com/google/android/gms/location/FusedLocationProviderClient.html)
 - [Navigation component](https://developer.android.com/guide/navigation/get-started)
-- [Shimmer](https://github.com/facebookarchive/shimmer-android
+- [Shimmer](https://github.com/facebookarchive/shimmer-android)
 - [Room Database](https://developer.android.com/jetpack/androidx/releases/room)
 - [coroutines](https://developer.android.com/kotlin/coroutines)
 - [viewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)
