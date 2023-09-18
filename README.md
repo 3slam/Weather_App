@@ -16,6 +16,23 @@
   
 - User-Friendly Interface.
 
+  **Demo Video**<br/>
+
+  https://github.com/3slam/Music_Player_APP/assets/82102228/fac2faf3-1e65-41fd-9da4-02a2f22d3a03
+
+ #  libraries and tools
+
+- [FusedLocation Provider Client](https://developers.google.com/android/reference/com/google/android/gms/location/FusedLocationProviderClient.html)
+- [Navigation component](https://developer.android.com/guide/navigation/get-started)
+- [Shimmer](https://github.com/facebookarchive/shimmer-android)
+- [Room Database](https://developer.android.com/jetpack/androidx/releases/room)
+- [coroutines](https://developer.android.com/kotlin/coroutines)
+- [viewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)
+- [Retrofit](https://square.github.io/retrofit/)
+- [OkHttpClient](https://square.github.io/okhttp/)
+- [intuit](https://github.com/intuit/sdp)
+- [Lottie](https://github.com/airbnb/lottie-android)
+- 
 # Screens
 
 <div>
@@ -60,18 +77,6 @@
 </div>
 
 
- #  libraries and tools
-
-- [FusedLocation Provider Client](https://developers.google.com/android/reference/com/google/android/gms/location/FusedLocationProviderClient.html)
-- [Navigation component](https://developer.android.com/guide/navigation/get-started)
-- [Shimmer](https://github.com/facebookarchive/shimmer-android)
-- [Room Database](https://developer.android.com/jetpack/androidx/releases/room)
-- [coroutines](https://developer.android.com/kotlin/coroutines)
-- [viewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)
-- [Retrofit](https://square.github.io/retrofit/)
-- [OkHttpClient](https://square.github.io/okhttp/)
-- [intuit](https://github.com/intuit/sdp)
-- [Lottie](https://github.com/airbnb/lottie-android)
 
   
 ### Thanks For Reading.
